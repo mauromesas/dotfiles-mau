@@ -1,0 +1,72 @@
+*{
+  font-size: 12px;
+  font-family: "JetBrainsMono Nerd Font";
+  color: #dadada;
+  min-height: 11px;
+}
+#waybar {
+  background: transparent;
+  border-radius: 5px;
+}
+#workspaces{
+  border-radius:5px;
+  box-shadow:0px 0px black;
+}
+
+#workspaces,
+#network,
+#backlight,
+#pulseaudio,
+#clock,
+#battery,
+#idle_inhibitor,
+#custom-lizzy,
+#bluetooth,
+#custom-power,
+#custom-notification{
+  margin-left:5px;
+  margin-right: 5px;
+  background: #1d1f21;
+  border-radius:5px 0px 0px 5px;
+  padding-left:10px;
+  padding-right: 10px;
+  border: 2px solid #373b41
+}
+
+#network,
+#pulseaudio,
+#backlight,
+#bluetooth{
+  margin:0px;
+}
+#backlight,
+#bluetooth{
+  border-radius:0px;
+}
+#pulseaudio{
+  border-radius: 0px 5px 5px 0px;
+}
+
+#idle_inhibitor,
+#clock,
+#workspaces,
+#custom-lizzy,
+#custom-power,
+#battery,
+#custom-notification{
+  border-radius: 5px;
+}
+
+#idle_inhibitor.activated{
+  color:#e57474;
+}
+
+#custom-power{
+color:#c47fd5;
+margin-right:10px;
+padding-right:14px;
+}
+
+
+
+

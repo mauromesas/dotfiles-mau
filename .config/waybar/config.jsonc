@@ -1,0 +1,111 @@
+{
+	"position":"top",
+	"height": 26,
+  "margin-left": 6,
+  "margin-right": 6,
+	"margin-top": 6,
+	"spacing": 2,
+
+
+		"modules-left": ["custom/spac1", "custom/menu", "custom/sep", "hyprland/workspaces", "custom/sep", "custom/spotify"], //
+		"modules-center":[],
+		"modules-right":["custom/spac1", "tray", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep", "clock", "custom/sep", "custom/power", "custom/spac1"], //
+
+	"pulseaudio": {
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-icons": {
+			"default": [" ", " ", " "]
+		},
+		"on-click": "pavucontrol"
+	},
+	
+	"cpu": {
+	    "interval": 5,
+	    "format": "  {}",
+	    "max-length": 10
+	},
+
+	"hyprland/language": {
+		"format": " {}",
+		"format-en": " US",
+		"format-ru": " RU",
+	},
+    
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "  {:%Y-%m-%d}",
+		"format": "  {:%H:%M}"
+	},
+
+	"tray": {
+		"icon-size": 16,
+		"spacing": 3
+	},
+
+	"custom/spac1":{
+		"format": " ",
+		"tooltip": false
+	},
+
+	"custom/spac": {
+		"format": " ",
+		"tooltip": false
+	},
+
+        "custom/sep": {
+        	"format": " | ", //‖
+		"tooltip": false
+	},
+
+	"hyprland/workspaces": {
+        "disable-scroll": true,
+        "rotate": 0,
+        "all-outputs": true,
+        "active-only": false,
+        "on-click": "activate",
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+        "persistent-workspaces": {
+        }
+    },
+
+       "custom/spotify": {
+    "exec": "/usr/bin/python3 ~/.config/waybar/mediaplayer.py --player spotifyd",
+    "format": "{}   ",
+    "return-type": "json",
+    "on-click": "alacritty -e spt",
+    "on-click-right": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+},
+
+    "network": {
+        "tooltip": true,
+        "format-wifi": " ",
+        "rotate": 0,
+        "format-ethernet": "󰈀 ",
+        "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+        "format-linked": "󰈀 {ifname} (No IP)",
+        "format-disconnected": "󰖪 ",
+        "tooltip-format-disconnected": "Disconnected", 
+        "interval": 2,
+    },
+
+    "custom/power": {
+        "format": " ",
+        "rotate": 0,
+        "exec": "echo ; echo  logout",
+        "on-click": "wlogout",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    "custom/menu":{
+        "format": "Apps",
+        "exec": "echo ; echo menu",
+        "on-click": "wofi --show drun",
+        "tooltip": true
+    }
+}
