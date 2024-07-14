@@ -1,0 +1,50 @@
+[window]
+#padding = { x = 0, y = 4 }
+#dynamic_padding = true
+opacity = 0.9
+
+# Default colors
+[colors.primary]
+background = '#161616'
+foreground = '#ffffff'
+
+# Normal colors
+[colors.normal]
+black   = '#262626'
+red     = '#ee5396'
+green   = '#42be65'
+yellow  = '#ffe97b'
+blue    = '#33b1ff'
+magenta = '#ff7eb6'
+cyan    = '#3ddbd9'
+white   = '#dde1e6'
+
+# Bright colors
+[colors.bright]
+black   = '#393939'
+red     = '#ee5396'
+green   = '#42be65'
+yellow  = '#ffe97b'
+blue    = '#33b1ff'
+magenta = '#ff7eb6'
+cyan    = '#3ddbd9'
+white   = '#ffffff'
+
+[font]
+size = 12
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
