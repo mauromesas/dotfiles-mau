@@ -5,7 +5,7 @@
 ### 💻 Instalación
 Paquetes Pacman:
 ```
-sudo pacman -S hyprland waybar wofi alacritty spotifyd 
+sudo pacman -S hyprland waybar wofi kitty spotifyd 
 ```
 Paquetes AUR:
 ```
