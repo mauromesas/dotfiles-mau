@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aaa5928f-87e6-476c-99b8-ec2bc210c54a" alt="Hyprland" width="80%">
+  <img src="https://github.com/user-attachments/assets/aaa5928f-87e6-476c-99b8-ec2bc210c54a" alt="Hyprland" width="50%">
 </p>
 
 
