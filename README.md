@@ -9,7 +9,7 @@ sudo pacman -S hyprland waybar wofi alacritty spotifyd
 ```
 Paquetes AUR:
 ```
-yay -S waypaper wlogout spotify-tui nwg-look wayshot-git hyprpicker
+yay -S waypaper wlogout spotify-tui nwg-look wayshot-git hyprpicker cava
 ```
 
 ![1721024059-wayshot](https://github.com/user-attachments/assets/91d95be8-3004-48f7-b88e-1f4f079fecac)
