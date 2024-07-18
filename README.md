@@ -1,4 +1,4 @@
-![cover](https://github.com/user-attachments/assets/905aee95-64f1-4920-adb0-6b2efc402bb6)
+![cover](https://github.com/user-attachments/assets/fe23b66e-5274-4831-ab31-d14ed9ff9e94)
 
 <div align = center>
   
