@@ -1,50 +1,28 @@
+#import = ["~/.cache/wal/colors-alacritty.toml"]
+import = ["~/.config/alacritty/themes/carbonfox.toml"]
+
+live_config_reload = true
+
 [window]
-#padding = { x = 0, y = 4 }
-#dynamic_padding = true
+decorations = "none"
+dynamic_title = true
 opacity = 0.9
+dynamic_padding = true
 
-# Default colors
-[colors.primary]
-background = '#161616'
-foreground = '#ffffff'
+[window.padding]
+x = 1
+y = 1
 
-# Normal colors
-[colors.normal]
-black   = '#262626'
-red     = '#ee5396'
-green   = '#42be65'
-yellow  = '#ffe97b'
-blue    = '#33b1ff'
-magenta = '#ff7eb6'
-cyan    = '#3ddbd9'
-white   = '#dde1e6'
-
-# Bright colors
-[colors.bright]
-black   = '#393939'
-red     = '#ee5396'
-green   = '#42be65'
-yellow  = '#ffe97b'
-blue    = '#33b1ff'
-magenta = '#ff7eb6'
-cyan    = '#3ddbd9'
-white   = '#ffffff'
+[cursor.style]
+#blinking = "On"
+shape = "Beam"
 
 [font]
-size = 12
+size = 10
 
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
+builtin_box_drawing = true
 
-[font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
-
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
+normal = { family = "JetBrainsMono NF", style = "Semibold" }
+bold = { family = "JetBrainsMono NF", style = "Bold" }
+italic = { family = "JetBrainsMono NF", style = "Italic" }
+bold_italic = { family = "JetBrainsMono NF", style = "Bold Italic" }

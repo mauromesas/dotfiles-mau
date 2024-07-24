@@ -1,6 +1,5 @@
 {
 	"position":"top",
-  "layer": "top",
 	"height": 26,
   "margin-left": 6,
   "margin-right": 6,
@@ -9,34 +8,18 @@
 	"spacing": 2,
 
 
-		"modules-left": ["custom/spac1", "custom/menu", "custom/sep", "hyprland/workspaces", "custom/spac"], //
-		"modules-center":["custom/spotify"],
-		"modules-right":["custom/spac1", "tray", "custom/sep", "pulseaudio", "custom/sep", "pulseaudio#microphone", "custom/sep", "network", "custom/sep", "clock", "custom/sep", "custom/power", "custom/spac1"], //
+		"modules-left": ["custom/spac1", "custom/menu", "custom/sep", "custom/spotify", "custom/spac"], //
+		"modules-center":["custom/spac1", "hyprland/workspaces", "custom/sep", "hyprland/window", "custom/spac"],
+		"modules-right":["custom/spac1", "tray", "custom/sep", "pulseaudio", "custom/sep", "network", "custom/sep", "clock", "custom/sep", "custom/power", "custom/spac1"], //
 
 	"pulseaudio": {
+		"scroll-step": 5,
 		"format": "{icon} {volume}%",
-    "tooltip": false,
-    "format-muted": " ",
-    "on-click": "pamixer -t",
-    "on-click-right": "pavucontrol",
-    "on-scroll-up": "pamixer -d 1",
-    "on-scroll-down": "pamixer -i 1",
-    "scroll-step": 5,
 		"format-icons": {
 			"default": [" ", " ", " "]
-		}
+		},
+		"on-click": "pavucontrol"
 	},
-
-	  "pulseaudio#microphone": {
-    "format": "{format_source}",
-    "format-source": " {volume}%",
-    "format-source-muted": "  Muted",
-    "on-click": "pamixer --default-source -t",
-    "on-click-right": "pavucontrol",
-    "on-scroll-up": "pamixer --default-source -i 5",
-    "on-scroll-down": "pamixer --default-source -d 5",
-    "scroll-step": 5
-  },
 	
     
 	"clock": {
