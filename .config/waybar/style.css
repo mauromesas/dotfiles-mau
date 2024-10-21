@@ -9,33 +9,78 @@
 
 
 window#waybar {
-  background: alpha(@background, 0.8);
-  border: 2px solid @color5;
-  border-radius: 4px;
+  background: @transparent;
+  /*border: 1px solid #a7a7a7;*/
+  border-radius: 0px;
 }
 
-#workspaces {
-  margin: 0px 0px;
-  background: transparent;
-  border-radius: 10px;
+#custom-menu{
+  color: #f4f1f8;
+  /*color: @foreground;*/
+  background: #0B0A06;
+  margin: 0px 0px 0px;
+  padding-left: 6px;
+  padding-right: 9px;
+  border: 1px solid #a7a7a7;
+  border-radius: 4;
 }
 
+#workspaces,
+#custom-spotify,
+#tray,
+#pulseaudio,
+#network,
+#clock {
+   color: #f4f1f8;
+  /*color: @foreground;*/
+  background: #0B0A06;
+  margin: 0px 0px 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 1px solid #a7a7a7;
+  border-radius: 4;
+}
+
+#custom-power{
+  color: #f4f1f8;
+  /*color: @foreground;*/
+  background: #0B0A06;
+  margin: 0px 0px 0px;
+  padding-left: 6px;
+  padding-right: 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 4;
+}
+
+/* Workspaces stuff */
 #workspaces button {
-  padding: 0px 2px;
-  margin: 0px 4px;
-  color: alpha(@foreground, 0.5);
+	/*font-weight: bold;*/
+	padding-left: 2pt;
+	padding-right: 2pt;
+	color: #484848;
 }
 
-#workspaces button.active {
-  transition: color 0.5s;
-  color: @foreground;
+/* Inactive (on unfocused output) */
+#workspaces button.visible {
+	color: @white;
 }
 
-#workspaces button.urgent,
+/* Active (on focused output) */
+#workspaces button.focused {
+	color: #4287f5;
+}
+
+/* Contains an urgent window */
+#workspaces button.urgent {
+	color: @black;
+	background: @warning;
+}
+
+/* Style when cursor is on the button */
 #workspaces button:hover {
-  color: @color9;
-  background-color: transparent;
+	color: @white;
 }
+
 
 #pulseaudio.microphone.source-muted {
   color: #bf616a;
@@ -45,15 +90,5 @@ window#waybar {
   color: #484848
 }
 
-.modules-left,
-.modules-right,
-.modules-center {
-  /*color: #f4f1f8;*/
-  color: @foreground;
-  /*background: alpha(@background, 0.8);
-  margin: 0px 0px 0px;
-  border: 2px solid @color5;
-  border-radius: 4px;*/
-  padding-bottom: 2px;
-}
+
 

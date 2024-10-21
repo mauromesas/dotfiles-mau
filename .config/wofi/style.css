@@ -8,9 +8,8 @@
 }
 
 window {
-    background: @background;
-    border-radius: 4px;
-    border: 3px solid @color5;
+    background: #0B0A06;
+    border: 1px solid @a7a7a7;
 }
 
 #entry, #text, #input {
@@ -18,8 +17,8 @@ window {
 }
 
 #input {
-    background-color: #212328;
-    border-radius: 4px;
+    background-color: @transparent;
+    border: 1px solid #a7a7a7;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -27,7 +26,6 @@ window {
 }
 
 #input, #input:focus {
-    border: none;
     outline: none;
     box-shadow: none;
 }
@@ -41,7 +39,8 @@ window {
 }
 
 #entry:selected {
-    background-color: alpha(@color5, 0.6);
+    background-color: @transparent;
+    border: 1px solid #a7a7a7;
     outline: none;
 }
 
