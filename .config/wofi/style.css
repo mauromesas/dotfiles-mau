@@ -1,54 +1,40 @@
-@import url("/home/mauro/.cache/wal/colors-waybar.css");
+#outer-box {
+	border: 2px solid #282828;
+}
 
-* {
-  font-family: JetBrainsMono Nerd Font;
+#window {
+	background-color: #141414;
+}
+
+#text {
+	font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
   font-size: 13px;
-  color: @foreground;
 }
 
-window {
-    background: #0B0A06;
-    border: 1px solid @a7a7a7;
-}
-
-#entry, #text, #input {
-    transition: background-color 500ms ease, color 500ms ease;
+#text:selected {
+	color: #16161c;
 }
 
 #input {
-    background-color: @transparent;
-    border: 1px solid #a7a7a7;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+	margin: 4px;
+	border: 2px solid #282828;
+	background-color: #OF1011;
 }
 
-#input, #input:focus {
-    outline: none;
-    box-shadow: none;
+#scroll {
+	margin: 2px 2px 3px 2px;
 }
 
 #entry {
-    padding: 10px;
-}
-
-#entry:hover {
-    background-color: #3c3836;
+	padding: 2px 4px;
+	margin: 1px 2px;
 }
 
 #entry:selected {
-    background-color: @transparent;
-    border: 1px solid #a7a7a7;
-    outline: none;
-}
-
-#entry:selected #text {
-    color: @foreground;
+	background-color: #d5d8da;
 }
 
 #text {
   padding-left: 8px;
-  margin: 6px;
 }

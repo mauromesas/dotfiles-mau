@@ -1,28 +1,28 @@
-@import url("/home/mauro/.cache/wal/colors-waybar.css");
+/*@import url("/home/mauro/.cache/wal/colors-waybar.css");*/
 
 * {
 	font-family: JetBrainsMono Nerd Font;
   font-weight: bolder;
-	font-size: 13px;
+	font-size: 12px;
   min-height: 10px;
 }
 
 
 window#waybar {
-  background: @transparent;
-  /*border: 1px solid #a7a7a7;*/
-  border-radius: 0px;
+  background: #141414;
+  border: 2px solid #282828;
 }
 
 #custom-menu{
   color: #f4f1f8;
   /*color: @foreground;*/
-  background: #0B0A06;
+  background: #141414;
   margin: 0px 0px 0px;
-  padding-left: 6px;
+  padding-left: 10px;
   padding-right: 9px;
-  border: 1px solid #a7a7a7;
-  border-radius: 4;
+  border-top: 2px solid #282828;
+  border-bottom: 2px solid #282828;
+  border-left: 2px solid #282828;
 }
 
 #workspaces,
@@ -33,23 +33,24 @@ window#waybar {
 #clock {
    color: #f4f1f8;
   /*color: @foreground;*/
-  background: #0B0A06;
+  background: #141414;
   margin: 0px 0px 0px;
   padding-left: 6px;
   padding-right: 6px;
-  border: 1px solid #a7a7a7;
-  border-radius: 4;
+  border-top: 2px solid #282828;
+  border-bottom: 2px solid #282828;
 }
 
 #custom-power{
   color: #f4f1f8;
   /*color: @foreground;*/
-  background: #0B0A06;
+  background: #141414;
   margin: 0px 0px 0px;
   padding-left: 6px;
-  padding-right: 10px;
-  border: 1px solid #a7a7a7;
-  border-radius: 4;
+  padding-right: 14px;
+  border-top: 2px solid #282828;
+  border-bottom: 2px solid #282828;
+  border-right: 2px solid #282828;
 }
 
 /* Workspaces stuff */

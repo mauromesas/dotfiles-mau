@@ -1,0 +1,54 @@
+@import url("/home/mauro/.cache/wal/colors-waybar.css");
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-weight: bold;
+  font-size: 13px;
+  color: @foreground;
+}
+
+window {
+    background: #0B0A06;
+    border: 1px solid @a7a7a7;
+}
+
+#entry, #text, #input {
+    transition: background-color 500ms ease, color 500ms ease;
+}
+
+#input {
+    background-color: @transparent;
+    border: 1px solid #a7a7a7;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#input, #input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#entry {
+    padding: 10px;
+}
+
+#entry:hover {
+    background-color: #3c3836;
+}
+
+#entry:selected {
+    background-color: @transparent;
+    border: 1px solid #a7a7a7;
+    outline: none;
+}
+
+#entry:selected #text {
+    color: @foreground;
+}
+
+#text {
+  padding-left: 8px;
+  margin: 6px;
+}
