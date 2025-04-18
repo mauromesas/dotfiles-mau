@@ -7,9 +7,8 @@ set $mod Mod4
 font pango:JetBrainsMono Nerd Font 10
 
 # Bordes
-default_border pixel 3
-
-hide_edge_borders both
+default_border pixel 2
+default_floating_border pixel 2
 
 # Gaps
 gaps inner 6
@@ -48,6 +47,9 @@ bindsym $mod+q kill
 
 # Rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme ~/.config/rofi/rofi-collection/material/material.rasi
+
+# Conectar HDMI
+bindsym $mod+Shift+h exec --no-startup-id ~/.config/i3/hdmi.sh
 
 
 # Esquema de Colores
