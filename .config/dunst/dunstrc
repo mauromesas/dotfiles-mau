@@ -1,28 +1,67 @@
+# ┌─────────────────────────┐
+# │   Dunst Configuration   │ 
+# └─────────────────────────┘
+
 [global]
     monitor = 0
     follow = none
+
+    ### Geometry ###
     width = 300
-    height = 350
+    height = (0, 300)
     origin = top-right
-    offset = 20x20
+    offset = (10, 40)
     scale = 0
-    notification_limit = 0
+    notification_limit = 20
+
+    ### Progress bar ###
     progress_bar = true
-    progress_bar_height = 2
-    progress_bar_frame_width = 0
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
     progress_bar_min_width = 150
     progress_bar_max_width = 300
+    progress_bar_corner_radius = 0
+    progress_bar_corners = all
+
+    # Corner radius for the icon image.
+    icon_corner_radius = 0
+    icon_corners = all
+
+    # Show how many messages are currently hidden
     indicate_hidden = yes
+
+    # The transparency of the window.
     transparency = 0
+
+    # Draw a line of "separator_height" pixel height between two notifications.
     separator_height = 2
-    padding = 24
-    horizontal_padding = 16
-    text_icon_padding = 0
-    frame_width = 0
-    separator_color = auto
+
+    # Padding between text and separator.
+    padding = 10 
+
+    # Horizontal padding.
+    horizontal_padding = 10 
+
+    # Padding between text and icon.
+    text_icon_padding = 15 
+
+    # Defines width in pixels of frame around the notification window.
+    frame_width = 2
+
+    # Defines color of the frame around the notification window.
+    frame_color = "#2f2f2f"
+
+    # Size of gap to display between notifications.
+    gap_size = 5 
+
+    # Define a color for the separator.
+    separator_color = frame
+
+    # Sort type.
     sort = yes
-    idle_threshold = 0
-    font = Noto Sans 10
+
+    ### Text ###
+    font = JetBrainsMono Nerd Font 10 
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -32,40 +71,51 @@
     ellipsize = middle
     ignore_newline = no
     stack_duplicates = true
-    hide_duplicate_count = true
+    hide_duplicate_count = false
     show_indicators = yes
+
+    ### Icons ###
+    enable_recursive_icon_lookup = true
+    icon_theme = Papirus-dark
     icon_position = left
-    min_icon_size = 0
-    max_icon_size = 72
-    sticky_history = false
-    history_length = 0
+    min_icon_size = 32
+    max_icon_size = 64 
+
+    ### History ###
+    sticky_history = yes
+    history_length = 20
+
+    ### Misc/Advanced ###
     dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/xdg-open
     always_run_script = true
-    title = notification
+    title = Dunst
     class = Dunst
+    corner_radius = 0 
+    corners = all
     ignore_dbusclose = false
-    force_xwayland = false
-    force_xinerama = false
     mouse_left_click = close_current
-    mouse_right_click = do_action, close_current
-    mouse_middle_click = close_all
-
-[experimental]
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#010101"
-    foreground = "#f8f8f6"
-    timeout = 5
+    background = "#1a1a1a"
+    foreground = "#e6edf3"
+    timeout = 10
+    default_icon = dialog-information
 
 [urgency_normal]
-    background = "#010101"
-    foreground = "#f8f8f6"
-    timeout = 5
+    background = "#1a1a1a"
+    foreground = "#e6edf3"
+    timeout = 10
+    override_pause_level = 30
+    default_icon = dialog-information
 
 [urgency_critical]
-    background = "#010101"
-    foreground = "#f8f8f6"
-    frame_color = "#ff5555"
-    timeout = 120
+    background = "#1a1a1a"
+    foreground = "#e6edf3"
+    frame_color = "#ffd173"
+    timeout = 0
+    override_pause_level = 60
+    default_icon = dialog-warning
