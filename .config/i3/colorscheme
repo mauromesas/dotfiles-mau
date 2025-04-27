@@ -1,0 +1,13 @@
+# i3 ColorScheme
+
+set $color1     #2C2627
+set $color2     #2f2f2f
+set $color3     #ee5396
+set $color4     #161616
+
+#class                          border          bground         text            indicator       child_border
+client.focused               $color2           $color1         $color3           $color2         $color2
+client.unfocused             $color4           $color1         $color4           $color2         $color4
+client.focused_inactive      $color4           $color1         $color4           $color4         $color4
+client.urgent                $color3           $color3         $color2 
+

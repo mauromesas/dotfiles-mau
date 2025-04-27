@@ -1,8 +1,5 @@
 #!bin/sh
 
-# Pantalla
-#xrandr --output eDP1 --off
-
 # Bug Cursor
 #xsetroot -cursor_name left_ptr &
 
