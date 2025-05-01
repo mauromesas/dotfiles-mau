@@ -1,95 +1,86 @@
-/*@import url("/home/mauro/.cache/wal/colors-waybar.css");*/
+/* ┌──────────────────────────────┐
+   │    Minimalist Waybar Style   │
+   └──────────────────────────────┘ 
+*/
+
+@import "colors.css";
 
 * {
-	font-family: JetBrainsMono Nerd Font;
+  font-family: JetBrainsMono Nerd Font;
   font-weight: bolder;
-	font-size: 12px;
+  font-size: 12px;
   min-height: 10px;
 }
 
-
 window#waybar {
-  background: #141414;
-  border: 2px solid #282828;
+  background: @bg;
+  border: 2px solid @border;
 }
 
-#custom-menu{
-  color: #f4f1f8;
-  /*color: @foreground;*/
-  background: #141414;
-  margin: 0px 0px 0px;
-  padding-left: 10px;
-  padding-right: 9px;
-  border-top: 2px solid #282828;
-  border-bottom: 2px solid #282828;
-  border-left: 2px solid #282828;
-}
-
-#workspaces,
-#custom-spotify,
-#tray,
-#pulseaudio,
-#network,
-#clock {
-   color: #f4f1f8;
-  /*color: @foreground;*/
-  background: #141414;
-  margin: 0px 0px 0px;
+#workspaces {
+  color: @text;
+  background: transparent;
   padding-left: 6px;
   padding-right: 6px;
-  border-top: 2px solid #282828;
-  border-bottom: 2px solid #282828;
 }
 
-#custom-power{
-  color: #f4f1f8;
-  /*color: @foreground;*/
-  background: #141414;
-  margin: 0px 0px 0px;
-  padding-left: 6px;
-  padding-right: 14px;
-  border-top: 2px solid #282828;
-  border-bottom: 2px solid #282828;
-  border-right: 2px solid #282828;
-}
-
-/* Workspaces stuff */
 #workspaces button {
-	/*font-weight: bold;*/
-	padding-left: 2pt;
-	padding-right: 2pt;
-	color: #484848;
+  padding-left: 2pt;
+  padding-right: 2pt;
+  color: #404040;
 }
 
-/* Inactive (on unfocused output) */
 #workspaces button.visible {
-	color: @white;
+  color: @text;
 }
 
-/* Active (on focused output) */
-#workspaces button.focused {
-	color: #4287f5;
-}
-
-/* Contains an urgent window */
 #workspaces button.urgent {
-	color: @black;
-	background: @warning;
+  color: @black;
+  background: @warning;
 }
 
-/* Style when cursor is on the button */
 #workspaces button:hover {
-	color: @white;
+  color: @white;
+  border-radius: 0px;
+  background: transparent;
 }
 
+#custom-spotify {
+  color: @text;
+  background: transparent;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#tray {
+  color: @text;
+  background: transparent;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#pulseaudio {
+  color: @text;
+  background: transparent;
+  padding-left: 6px;
+  padding-right: 6px;
+}
 
 #pulseaudio.microphone.source-muted {
   color: #bf616a;
 }
 
-#custom-sep{
-  color: #484848
+#network {
+  color: @text;
+  background: transparent;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-
-
+#clock {
+  color: @text;
+  background: transparent;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 6px;
+}

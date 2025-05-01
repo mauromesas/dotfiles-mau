@@ -1,40 +1,47 @@
+/* ┌──────────────────────────┐
+   │        Wofi Style        │
+   └──────────────────────────┘
+*/
+
+@import ".config/wofi/colors.css";
+
 #outer-box {
-	border: 2px solid #282828;
+  border: 2px solid @border;
 }
 
 #window {
-	background-color: #141414;
-}
-
-#text {
-	font-family: "JetBrainsMono Nerd Font";
-  font-weight: bold;
-  font-size: 13px;
-}
-
-#text:selected {
-	color: #16161c;
+  background-color: @bg;
 }
 
 #input {
-	margin: 4px;
-	border: 2px solid #282828;
-	background-color: #OF1011;
+  margin: 4px;
+  border: 2px solid @border;
+  border-radius: 0px;
+  background-color: @bg;
 }
 
 #scroll {
-	margin: 2px 2px 3px 2px;
+  margin: 2px 2px 3px 2px;
 }
 
 #entry {
-	padding: 2px 4px;
-	margin: 1px 2px;
+  padding: 2px 4px;
+  margin: 1px 2px;
+  border-radius: 0px;
 }
 
 #entry:selected {
-	background-color: #d5d8da;
+  border: 2px solid @border;
+  background: transparent;
 }
 
 #text {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 13px;
   padding-left: 8px;
+}
+
+#text:selected {
+  color: @text;
 }

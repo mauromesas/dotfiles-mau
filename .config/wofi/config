@@ -1,3 +1,7 @@
+# ┌──────────────────────────────┐
+# │      Wofi Configuration      │
+# └──────────────────────────────┘
+
 hide_scroll=true
 width=400
 height=300
