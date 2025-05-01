@@ -6,15 +6,15 @@
     monitor = 0
     follow = none
 
-    ### Geometry ###
+    # [Geometry]
     width = 300
     height = (0, 300)
     origin = top-right
-    offset = (10, 40)
+    offset = (6, 40)
     scale = 0
     notification_limit = 20
 
-    ### Progress bar ###
+    # [Progress Bar]
     progress_bar = true
     progress_bar_height = 10
     progress_bar_frame_width = 1
@@ -23,44 +23,27 @@
     progress_bar_corner_radius = 0
     progress_bar_corners = all
 
-    # Corner radius for the icon image.
+    # [Appearance]
     icon_corner_radius = 0
     icon_corners = all
-
-    # Show how many messages are currently hidden
     indicate_hidden = yes
-
-    # The transparency of the window.
     transparency = 0
-
-    # Draw a line of "separator_height" pixel height between two notifications.
     separator_height = 2
-
-    # Padding between text and separator.
     padding = 10 
-
-    # Horizontal padding.
     horizontal_padding = 10 
-
-    # Padding between text and icon.
     text_icon_padding = 15 
-
-    # Defines width in pixels of frame around the notification window.
     frame_width = 2
-
-    # Defines color of the frame around the notification window.
     frame_color = "#2f2f2f"
-
-    # Size of gap to display between notifications.
     gap_size = 5 
-
-    # Define a color for the separator.
     separator_color = frame
-
-    # Sort type.
     sort = yes
+    enable_recursive_icon_lookup = true
+    icon_theme = Papirus-dark
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 64 
 
-    ### Text ###
+    # [Text]
     font = JetBrainsMono Nerd Font 10 
     line_height = 0
     markup = full
@@ -72,20 +55,11 @@
     ignore_newline = no
     stack_duplicates = true
     hide_duplicate_count = false
-    show_indicators = yes
+    show_indicators = yes   
 
-    ### Icons ###
-    enable_recursive_icon_lookup = true
-    icon_theme = Papirus-dark
-    icon_position = left
-    min_icon_size = 32
-    max_icon_size = 64 
-
-    ### History ###
+    # [Misc/Advanced]
     sticky_history = yes
     history_length = 20
-
-    ### Misc/Advanced ###
     dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/xdg-open
     always_run_script = true

@@ -5,7 +5,7 @@ configuration {
 }
 
 * {
-    background-color: #1a1a1a;
+    background-color: #161616;
     text-color:       #e6edf3;
     border-color:     #2f2f2f;
     selected-normal-background: #1a1a1a;

@@ -1,4 +1,6 @@
-# i3 ColorScheme
+# ┌─────────────────────────┐
+# │     i3 Colorscheme      │
+# └─────────────────────────┘
 
 set $color1     #2C2627
 set $color2     #2f2f2f

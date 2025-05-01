@@ -1,5 +1,5 @@
 // ┌──────────────────────────┐
-// │   	Rofi Configuration    │
+// │    Rofi Configuration    │
 // └──────────────────────────┘
 
 configuration {
@@ -29,7 +29,7 @@ configuration {
   padding: 0;
   spacing: 0;
 
-  bg: #1a1a1a;
+  bg: #161616;
   bg-alt: #232323;
   fg: #e6edf3;
   fg-alt: #424242;
