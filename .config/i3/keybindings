@@ -20,7 +20,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
-#─────────────────────[Window Management]──────────────────────
+#──────────────────[Window Management]───────────────────
 
 # [Close focused window]
 bindsym $mod+q kill
@@ -62,24 +62,24 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# [Change container layout]
+# Change container layout
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# [Toggle tiling / floating]
+# Toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# [Change focus between tiling / floating windows]
+# Change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# [Focus the parent container]
+# Focus the parent container
 bindsym $mod+a focus parent
 
-# [Focus the child container]
+# Focus the child container
 bindsym $mod+c focus child
 
-#─────────────────────[Workspaces Management]──────────────────────
+#────────────────[Workspaces Management]─────────────────
 
 # [Names of defautl workspaces]
 set $ws1 "1"
@@ -132,13 +132,13 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-#─────────────────────[Miscellaneous]──────────────────────
+#────────────────────[Miscellaneous]─────────────────────
 
 # [Connect HDMI]
 bindsym $mod+Shift+h exec --no-startup-id ~/.config/i3/scripts/hdmi.sh
 
 # [Power Menu]
-bindsym $mod+Shift+p exec --no-startup-id ~/.config/polybar/scripts/powermenu.sh
+bindsym $mod+p exec --no-startup-id ~/.config/polybar/scripts/powermenu.sh
 
 # [Reload the configuration file]
 bindsym $mod+Shift+c reload
